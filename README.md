@@ -1,4 +1,4 @@
-# study-project
+# DOF 프로젝트
 
 ## Project setup
 ```
