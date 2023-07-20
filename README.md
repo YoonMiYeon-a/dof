@@ -27,6 +27,6 @@ See [Configuration Reference](https://cli.vuejs.org/config/).
 ### Vue 버전확인: 2.7.14
 ```
 npm list vue
-
+```
 
 ### Vue Router 설치완료
