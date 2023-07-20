@@ -1,4 +1,4 @@
-# DOF 프로젝트
+# DOF 앱, 어드민 구축 프로젝트
 
 ## Project setup
 ```
