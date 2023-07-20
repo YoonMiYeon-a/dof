@@ -958,7 +958,7 @@
 
 <script>
 export default {
-
+    name: 'Guide',
 }
 </script>
 

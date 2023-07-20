@@ -22,14 +22,13 @@
         <button class="btn w100">Countiue With Apple</button>
         <button class="btn w100">Countiue With Apple</button>
       </div>
-      .   
     </div>
   </div>
 </template>
 
 <script>
 export default {
- name: 'Login',
+ name: 'VueLogin',
 }
 </script>
 

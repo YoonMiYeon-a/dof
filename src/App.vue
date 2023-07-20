@@ -1,20 +1,29 @@
 <template>
   <div id="app">
+    <nav id="nav">
+      <router-link to="/">Home</router-link>
+      <router-link to="/login">Updates</router-link>
+      <router-link to="/Favorite">Favorite</router-link>
+      <router-link to="/Setting">Setting</router-link>
+      <router-link to="/Menu">Menu</router-link>
+    </nav>
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="울랄라랩 메인"/> -->
     <Login />
-    <!-- <div id="nav">
-      <router-link to="/">Home</router-link> ㅣ
-      <router-link to="/login">login</router-link>
-      
-    </div> -->
-    <router-view/>
+    <!-- <Map /> -->
+    
+    <!-- <Map /> -->
+    <AddGoogleMap />
+    <!-- <router-view/> -->
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
+import Map from './components/Map.vue'
+import AddGoogleMap from './components/AddGoogleMap.vue'
+
 
 export default {
   name: 'App',
@@ -24,8 +33,8 @@ export default {
     }
   },
   components: {
-    Login
-    // HelloWorld
+    Login,
+    AddGoogleMap,
   }
 }
 </script>
@@ -39,25 +48,13 @@ export default {
   width: 368px;
   margin: 0 auto;
   background: #fff;
-  position: absolute;
-  top: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  height: 100vh;
   font-size: 17px;
   padding: 16px;
   line-height: 1.3;
+  line-height: 1.3;
+  padding-bottom: 95px;
 }
-#nav {
-  padding: 30px;
-}
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+
 *{-webkit-text-size-adjust:none;word-break:keep-all}
 *:focus {outline:none;}
 body {-webkit-font-smoothing:subpixel-antialiased;}
@@ -161,5 +158,29 @@ button {
   margin: 4px 0;
   color: #222;
 }
-
+nav {
+  position: fixed;
+  padding: 10px;
+  left: 0;
+  right: 0;
+  bottom:0;
+  background: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  height: 80px;
+  border-radius: 10px 10px 0 0;
+  box-sizing: border-box;
+  box-shadow: 0 0 10px gray;
+  align-items: flex-end;
+}
+nav a {
+  padding: 10px;
+  font-size: 11px;
+  color: #888;
+}
+#nav a.router-link-exact-active {
+  color: #FF8C21 ;
+}
 </style>
