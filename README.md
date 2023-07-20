@@ -1,4 +1,4 @@
-# DOF 프로젝트
+# DOF 앱, 어드민 구축 프로젝트
 
 ## Project setup
 ```
@@ -22,3 +22,8 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+
+
+### Vue 버전확인: 2.7.14
+```
+npm list vue
