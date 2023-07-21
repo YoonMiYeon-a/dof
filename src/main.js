@@ -18,7 +18,3 @@ new Vue({
   render: h => h(App),
 }).$mount('#app')
 
-module.exports = {
-  stories: ['../src/**/*.stories.[tj]s'],
-};
-
