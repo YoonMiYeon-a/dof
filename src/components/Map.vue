@@ -5,6 +5,11 @@
         :center="center"
         style="width:100%;  height: 400px;"
       >
+      <gmap-marker
+        :key="index"
+        v-for="(m, index) in locationMarkers"
+        :position="m.position"
+      ></gmap-marker>
     </gmap-map>
   </div>
    
@@ -15,7 +20,7 @@ export default {
   name: "Map",
   data() {
     return {
-      center: { lat: 37.5642135, lng: 127.0016985 },
+      center: seoul,
       locationMarkers: [],
       locPlaces: [],
       existingPlace: null

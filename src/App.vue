@@ -21,7 +21,7 @@
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
 import Login from './components/Login.vue'
-import Map from './components/Map.vue'
+// import Map from './components/Map.vue'
 import AddGoogleMap from './components/AddGoogleMap.vue'
 
 
